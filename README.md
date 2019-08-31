@@ -5,6 +5,11 @@ Tyler McGinnis video tutorial:
 
 https://www.youtube.com/watch?v=Zb2mQyQRwqc
 
+## Setup `react` with `webpack` and `babel` (not `create-react-app`)
+
+Then, can build to a single bundle file    
+(to deploy with backend, but without the need for CORS)
+
 
 `$ npm init -y`
 `$ npm install react react-dom`
@@ -41,12 +46,13 @@ at the root directory of the project:
 
 Add this to package.json
 
-```"babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ]
-  },
+```
+	"babel": {
+    	"presets": [
+      	"@babel/preset-env",
+      	"@babel/preset-react"
+    	]
+  	},
  ```
 
 
@@ -54,8 +60,9 @@ Add this to package.json
 add a "create" script (used later for production compile)
 
 
-``` "scripts": {
-    "create": "webpack"
+``` 
+	"scripts": {
+    	"create": "webpack"
   },
 ```
 
@@ -67,9 +74,10 @@ during development, use webpack-dev-server module
 ("open" will open up resulting files in our local server)
 
 
-``` "scripts": {
-    "start": "webpack-dev-server --open"
-  },
+``` 
+	"scripts": {
+    	"start": "webpack-dev-server --open"
+  	},
 ```
   
 
