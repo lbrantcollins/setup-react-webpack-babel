@@ -46,7 +46,8 @@ Add this to package.json
       "@babel/preset-env",
       "@babel/preset-react"
     ]
-  },```
+  },
+ ```
 
 
 
@@ -55,7 +56,8 @@ add a "create" script (used later for production compile)
 
 ``` "scripts": {
     "create": "webpack"
-  },```
+  },
+```
 
 build to file (index_bundle.js) for production
 
@@ -65,9 +67,10 @@ during development, use webpack-dev-server module
 ("open" will open up resulting files in our local server)
 
 
- ``` "scripts": {
+``` "scripts": {
     "start": "webpack-dev-server --open"
-  },```
+  },
+```
   
 
 build in local cache during development
