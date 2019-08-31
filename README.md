@@ -47,12 +47,12 @@ at the root directory of the project:
 Add this to package.json
 
 ```
-	"babel": {
-    	"presets": [
-      	"@babel/preset-env",
-      	"@babel/preset-react"
-    	]
-  	},
+"babel": {
+	"presets": [
+		"@babel/preset-env",
+		"@babel/preset-react"
+	]
+},
  ```
 
 
@@ -61,9 +61,9 @@ add a "create" script (used later for production compile)
 
 
 ``` 
-	"scripts": {
-    	"create": "webpack"
-  },
+"scripts": {
+	"create": "webpack"
+},
 ```
 
 build to file (index_bundle.js) for production
@@ -75,9 +75,9 @@ during development, use webpack-dev-server module
 
 
 ``` 
-	"scripts": {
-    	"start": "webpack-dev-server --open"
-  	},
+"scripts": {
+	"start": "webpack-dev-server --open"
+},
 ```
   
 
